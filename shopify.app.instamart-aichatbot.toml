@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "c5e6cf549486483519faf3259a84c393"
+name = "instamart-aichatbot"
+handle = "instamart-aichatbot-1"
+application_url = "https://specific-counts-forbes-handling.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "instmart-ai-chatbot.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://specific-counts-forbes-handling.trycloudflare.com/auth/callback",
+  "https://specific-counts-forbes-handling.trycloudflare.com/auth/shopify/callback",
+  "https://specific-counts-forbes-handling.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
